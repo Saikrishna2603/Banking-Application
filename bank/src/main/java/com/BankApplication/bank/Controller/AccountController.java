@@ -19,6 +19,7 @@ public class AccountController
     {
         return accService.CreateAccount(acc);
     }
+    //Rest Api For Account details
     @GetMapping("/{id}")
     public Account getAccount(@PathVariable Long id)
     {
