@@ -30,6 +30,7 @@ public class AccountController
         Double amount=reqBody.get("amount");
         return accService.deposit(id,amount);
     }
+    // Rest ApI for Withdraw
     @PostMapping("{id}/withdraw")
     public Account withDraw(@RequestBody Map<String,Double> reqBody,@PathVariable Long id)
     {
